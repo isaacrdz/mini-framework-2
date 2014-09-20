@@ -10,6 +10,11 @@
 
 	function controller($name)
 		{
+			if(empty($name))
+			{
+				$name = 'home';
+			}
+
 			$file = "controllers/$name.php";
 			//exit($file);
 
